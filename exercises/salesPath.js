@@ -1,9 +1,9 @@
 function getCheapestCost(rootNode) {
   // your code goes here
   var cost = 0;
-  rootNode.children(forEach (childNode)=> {
-    cost += childNode.cost
-    getCheapestCost(childNode)});
+  // rootNode.children(forEach (childNode)=> {
+  //   cost += childNode.cost
+  //   getCheapestCost(childNode)});
 }
 
 /******************************************
