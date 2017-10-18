@@ -3,16 +3,16 @@ function wordCountEngine(document) {
   // your code goes here
   let start = 0;
   let end = 0;
-  let word = "";
+  let word;
   let words = {};
   for(let i = 0; i < document.length; i++) {
-    if (document[i] == ' ' || i == document.length - 1) {
+    if (document[i] === ' ' || i === document.length - 1) {
       end = i;
 
       word = document.slice(start, end).toLowerCase();
       word = word.replace(/[!,'.]/g, "");
       start = i + 1;
-      if (words[word] != undefined) {
+      if (words[word] !== undefined) {
         words[word] += 1;
       } else {
         words[word] = 1;
@@ -31,7 +31,7 @@ function wordCountEngine(document) {
 }
 
  let doc = "Practice makes perfect. you'll only get " +
- "Perfect by practice. just practice!"
+ "Perfect by practice. just practice!";
 
  console.log(wordCountEngine(doc));
 
